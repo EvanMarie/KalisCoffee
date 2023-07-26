@@ -1,6 +1,5 @@
 .carousel-outer {
     width: 100%;
-    padding: var(--small) var(--large) var(--large) var(--large);
     background-color: var(--darkBrownTransparent);
     position: relative;
     box-shadow: 5px 0px 8px var(--darkBrown);
@@ -16,7 +15,8 @@
 }
 
 .carousel-track {
-    padding: var(--xsmall) var(--medium) var(--medium) var(--medium);
+    height: 100%;
+    padding: var(--large) var(--medium);
     display: flex;
     transition: transform 0.3s ease;
 }
@@ -27,8 +27,8 @@
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 500px;
     font-size: var(--mediumText);
     background-color: var(--peachyCreme);
     color: var(--mainBackground);
@@ -38,11 +38,42 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 37%;
+    border-radius: var(--roundLarge);
     border: 2px solid var(--darkBrownTransparent);
 }
 
-@media (min-width: 900px) {
+.card:hover {
+    box-shadow: var(--mediumShadowDark);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+
+}
+
+.card img {
+    width: 300px;
+    height: 300px;
+    border-radius: var(--full);
+}
+
+.card h3 {
+    font-size: var(--mediumText);
+    font-weight: var(--semiBold);
+    margin: 0;
+    margin-top: var(--medium);
+}
+
+.card-description {
+    text-align: left;
+    padding: var(--small) var(--medium);
+}
+
+.card p {
+    font-size: var(--cardText);
+    margin: 0;
+    margin-top: var(--small);
+}
+
+/* @media (min-width: 900px) {
     .card {
         width: 250px;
         height: 250px;
@@ -55,7 +86,7 @@
         width: 275px;
         height: 275px;
     }
-}
+} */
 
 
 /* Hide scrollbar for Chrome, Safari and Opera */

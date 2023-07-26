@@ -1,6 +1,6 @@
 import { VerticalStack } from "./verticalStack";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import FlexContainer from "./flexContainer";
+// import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+// import FlexContainer from "./flexContainer";
 
 interface CardCarouselProps {
   children?: React.ReactNode;
@@ -16,7 +16,7 @@ export default function CardCarousel({
   return (
     <div className="carousel-outer">
       <VerticalStack spacing="0px">
-        <FlexContainer direction="row" justify="space-between">
+        {/* <FlexContainer direction="row" width="98%" justify="space-between">
           <BsArrowLeft
             size={30}
             color="var(--lightBlue"
@@ -27,7 +27,7 @@ export default function CardCarousel({
             color="var(--lightBlue"
             style={{ marginRight: "10px" }}
           />
-        </FlexContainer>
+        </FlexContainer> */}
         <div className="carousel-container">
           <div
             className="carousel-track"
@@ -46,6 +46,26 @@ export default function CardCarousel({
   );
 }
 
-export function CardCarouselItem({ children }: { children: React.ReactNode }) {
-  return <div className="card">{children}</div>;
+interface MenuCardProps {
+  itemName: string;
+  itemDescription: string;
+  itemImage: string;
+}
+
+export function MenuCard({
+  itemDescription,
+  itemName,
+  itemImage,
+}: MenuCardProps) {
+  return (
+    <div className="card">
+      <VerticalStack spacing="10px">
+        <h3>{itemName}</h3>
+        <img src={itemImage} alt={itemName} />
+        <div className="card-description">
+          <p>{itemDescription}</p>
+        </div>
+      </VerticalStack>
+    </div>
+  );
 }

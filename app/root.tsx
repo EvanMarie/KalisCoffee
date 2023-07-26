@@ -11,6 +11,7 @@ import styles from "./styles/global.css";
 import shortTextStyles from "./styles/shortText.css";
 import cardStyles from "./styles/card.css";
 import carouselStyles from "./styles/carousel.css";
+import headerStyles from "./styles/header.css";
 
 export const links: LinksFunction = () => [
   {
@@ -44,6 +45,10 @@ export const links: LinksFunction = () => [
   {
     rel: "stylesheet",
     href: carouselStyles,
+  },
+  {
+    rel: "stylesheet",
+    href: headerStyles,
   },
 ];
 
