@@ -1,0 +1,223 @@
+:root {
+
+    /* Break Points */
+
+    --baseScreen: 0px;
+    --smallScreen: 500px;
+    --mediumScreen: 750px;
+    --largeScreen: 900px;
+    --xlargeScreen: 1200px;
+
+
+    /* COLORS */
+
+    --lightCreme: #F9E2CA;
+    --lightCremeTransparent: rgba(249, 226, 202, 0.5);
+    --peachyCreme: #EFC8AA;
+    --peachyCremeTransparent: rgba(239, 200, 170, 0.2);
+    --beige: #BF9C79;
+    --beigeTransparent: rgba(191, 156, 121, 0.5);
+    --mediumBrown: #705449;
+    --mediumBrownTransparent: rgba(112, 84, 73, 0.5);
+    --coffee: #705B52;
+    --coffeeTransparent: rgba(112, 91, 82, 0.5);
+    --darkBrown: #291c20;
+    --darkBrownTransparent: rgba(41, 28, 32, 0.75);
+    --lightBlue: #A7E7F6;
+    --lightBlueTransparent: rgba(167, 231, 246, 0.5);
+    --brightBlue: #3FCEF6;
+    --brightBlueTransparent: rgba(63, 206, 246, 0.5);
+    --teal: #318EAD;
+    --tealTransparent: rgba(49, 142, 173, 0.5);
+    --darkTeal: #225A76;
+    --darkTealTransparent: rgba(34, 90, 118, 0.5);
+ 
+
+    --mainText: var(--lightCreme);
+    --mainBackground: var(--darkBrown);
+    --darkShadow: rgb(41, 28, 32);
+    --lightShadow: rgb(249, 226, 202);
+
+
+    /* SIZES */
+    
+    --xsmall: 0.25rem;
+    --small: 0.5rem;
+    --medium: 1rem;
+    --large: 2rem;
+    --larger: 3rem;
+    --xlarge: 4rem;
+    --xxlarage: 5rem;
+
+
+    /* FONT SIZES */
+    --xsmallText: 0.75rem;
+    --smallText: 0.9rem;
+    --normalText: 1.3rem;
+    --mediumText: 1.5rem;
+    --largeText: 2rem;
+    --xlargeText: 3rem;
+    --xxlargeText: 4rem;
+
+
+    /* WEIGHTS */
+
+    --light: 300;
+    --regular: 400;
+    --semiBold: 500;
+    --bold: 700;
+
+
+    /* RADIUS */
+
+    --roundXSmall: 3px;
+    --roundSmall: 7px;
+    --roundMedium: 11px;
+    --roundSemiLarge: 15px;
+    --roundLarge: 23px;
+    --roundXLarge: 44px;
+    --roundXXLarge: 99px;
+    --roundFull: 50%;
+
+    /* SHADOWS */
+
+    --xsmallShadowDark: 1px 1px 2px rgba(41, 28, 32,0.75);
+    --xsmallShadowLight: 1px 1px 2px rgba(249, 226, 202,0.75);
+    --smallShadowDark: 2px 2px 2px rgba(41, 28, 32,0.75);
+    --smallShadowLight: 2px 2px 2px rgba(249, 226, 202,0.75);
+    --mediumShadowDark: 3px 3px 2px rgba(41, 28, 32,0.75);
+    --mediumShadowLight: 3px 3px 2px rgba(249, 226, 202,0.75);
+    --largeShadowDark: 3px 3px 3px rgba(41, 28, 32,0.75);
+    --largeShadowLight: 3px 3px 3px rgba(249, 226, 202,0.75);
+    --subtleShadowDark: 3px 3px 4px rgba(41, 28, 32,0.75);
+    --subtleShadowLight: 3px 3px 4px rgba(249, 226, 202,0.75);
+    --faintShadowDark: 2px 2px 5px rgba(41, 28, 32,0.75);
+    --faintShadowLight: 2px 2px 5px rgba(249, 226, 202,0.75);
+
+
+}
+
+body {
+    margin: 0;
+    font-family: 'REM', sans-serif;
+    font-size: 1.3rem;
+    font-weight: var(--light);
+    background-color: var(--darkBrown);
+
+    color: var(--lightCreme);
+}
+
+@media (min-width: 900px) {
+    body {
+        font-size: 1.4rem;
+    }
+}
+
+.entire-background {
+    display: flex;
+    direction: column;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+#heading-container {
+    display: grid;
+    width: 100%;
+    background-color: var(--lightCremeTransparent);
+    color: var(--darkBrown);
+    text-shadow: var(--xsmallShadowLight);
+    grid-template-areas:
+        "heading"
+        "logo"
+        "social"
+        "address";
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+}
+
+#heading-container>* {
+    padding: 10px 0;
+}
+
+#heading-container>.headers {
+    grid-area: heading;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading-container>.logo {
+    grid-area: logo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading-container>.social-media {
+    grid-area: social;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#heading-container>.address {
+    grid-area: address;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: var(--semiBold);
+}
+
+.logo-image {
+    width: 300px;
+}
+
+@media (min-width: 1200px) {
+    #heading-container {
+        grid-template-areas:
+            "social heading logo"
+            "address heading logo";
+        grid-template-columns: auto 2fr auto;
+        grid-template-rows: auto auto;
+    }
+
+    #heading-container>.social-media, .address {
+        padding: 10px 40px;
+        height: auto;
+        }
+
+    #heading-container>.headers {
+        grid-area: heading;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        }
+
+    #heading-container>.logo {
+        padding: 10px 40px;
+}
+
+.logo-image {
+    width: 150px;
+}
+}
+
+
+
+
+/* ******************************************************************** */
+
+@media (min-width: 500px) {
+}
+
+@media (min-width: 750px) {
+}
+
+@media (min-width: 1200px) {
+}
