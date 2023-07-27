@@ -58,6 +58,7 @@
     --mediumText: 1.5rem;
     --mediumLargeText: 1.7rem;
     --largeText: 2rem;
+    --largerText: 2.5rem;
     --xlargeText: 3rem;
     --xxlargeText: 4rem;
 
@@ -132,9 +133,10 @@ p {
 
 
 .text-section, .text-section-stackable {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     background-color: var(--coffeeTransparent);
     padding: var(--medium) var(--large);
@@ -157,16 +159,8 @@ p {
     margin: 0;
 }
 
-@media (min-width: 900px) {
-    .text-section-stackable {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-}
-
 .stackable-image-left, .stackable-image-right {
-    width: 375px;
+    width: 300px;
     align-self: center;
     border-radius: var(--roundMedium);
     box-shadow: var(--mediumShadowDark);
@@ -174,23 +168,50 @@ p {
 
 .stackable-image-left {
     margin-bottom: var(--medium);
+    margin-top: var(--medium);
 }
 
 .stackable-image-right {
     margin-top: var(--medium);
+    margin-bottom: var(--medium);
+}
+
+.stackable-description {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: var(--medium);
+    padding: var(--medium);
 }
 
 @media (min-width: 900px) {
+
+    .text-section-stackable {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
     .stackable-image-left {
         margin-bottom: 0px;
+        margin-top: 0px;
         margin-right: var(--medium);
         width: 325px;
+        justify-content: center;
     }
 
     .stackable-image-right {
         margin-top: 0px;
+        margin-bottom: 0px;
         margin-left: var(--medium);
         width: 325px;
+    }
+
+    .stackable-description {
+        padding: var(--medium);
+        width: 50%;
     }
 }
 

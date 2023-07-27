@@ -73,24 +73,18 @@ function EventModalFunction({
               size={25}
             />
             <div className="event-modal-container">
-              <VerticalStack spacing="10px">
-                <div className="event-modal-title">
-                  <h2>{eventTitle}</h2>
-                </div>
-                <img
-                  src={eventImage}
-                  alt={eventTitle}
-                  className="event-image"
-                />
-                <div className="event-time">
-                  <p>{eventTime}</p>
-                </div>
-                <div className="event-modal-description">
-                  {eventDescription.map((paragraph, index) => (
-                    <p key={index}>{paragraph}</p>
-                  ))}
-                </div>
-              </VerticalStack>
+              <div className="event-modal-title">
+                <h2>{eventTitle}</h2>
+              </div>
+              <img src={eventImage} alt={eventTitle} className="event-image" />
+              <div className="event-time">
+                <p>{eventTime}</p>
+              </div>
+              <div className="event-modal-description">
+                {eventDescription.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </div>
             </div>
           </motion.div>
         </motion.div>

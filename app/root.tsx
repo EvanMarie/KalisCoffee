@@ -13,6 +13,7 @@ import cardStyles from "./styles/card.css";
 import carouselStyles from "./styles/carousel.css";
 import headerStyles from "./styles/header.css";
 import eventStyles from "./styles/eventCardModalStyles.css";
+import footerStyles from "./styles/footer.css";
 
 export const links: LinksFunction = () => [
   {
@@ -54,6 +55,10 @@ export const links: LinksFunction = () => [
   {
     rel: "stylesheet",
     href: eventStyles,
+  },
+  {
+    rel: "stylesheet",
+    href: footerStyles,
   },
 ];
 

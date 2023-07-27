@@ -44,43 +44,43 @@ export const MenuItems = [
   {
     itemName: "Mokka Sandwich",
     itemDescription:
-      "Our signature sandwich made with freshly baked bread, premium cheese, and assorted fillings is a feast for the senses.",
+      "Our signature sandwich, made with freshly baked bread and premium cheese, is a feast for the senses.",
     itemImage: "/images/menu08mokka.png",
   },
   {
-    itemName: "Chai-spiced Cheesecake",
+    itemName: "Chai Cheesecake",
     itemDescription:
-      "A velvety cheesecake with a dash of chai spices, this dessert offers a delightful fusion of East and West.",
+      "A velvety cheesecake with a dash of chai spices, this is a delightful fusion of East and West.",
     itemImage: "/images/menu09cheesecake.png",
   },
   {
-    itemName: "Mocha Eruption Brownies",
+    itemName: "Mocha Eruption",
     itemDescription:
-      "A chocolate lover's dream. These rich, fudgy brownies are infused with a shot of our signature espresso, providing an indulgent mocha twist.",
+      "A chocolate lover's dream:  rich, fudgy brownies infused with a shot of our signature espresso and an indulgent mocha twist.",
     itemImage: "/images/menu10brownies.png",
   },
   {
-    itemName: "Caramel Macchiato Tiramisu",
+    itemName: "Macchiato Tiramisu",
     itemDescription:
-      " A playful take on the classic Italian dessert. Layers of ladyfingers soaked in our caramel macchiato, smothered with a creamy mascarpone mix, and dusted with cocoa.",
+      "Layers of ladyfingers soaked in our caramel macchiato, smothered with a creamy mascarpone mix, and dusted with cocoa.",
     itemImage: "/images/menu11tiramisu.png",
   },
   {
-    itemName: "Dark Chocolate Lava Cake",
+    itemName: "Dark Chocolate Lava",
     itemDescription:
       "A decadent dark chocolate cake with a molten center that mirrors the transformative energy of Kali herself.",
     itemImage: "/images/menu12lavacake.png",
   },
   {
-    itemName: "Caramel Latte Panna Cotta",
+    itemName: "Caramel Panna Cotta",
     itemDescription:
       "A silky, creamy dessert with flavors of our beloved caramel latte, topped with a drizzle of dark caramel sauce.",
     itemImage: "/images/menu13panna.png",
   },
   {
-    itemName: "Vegan Berry Bliss Cake",
+    itemName: "Berry Bliss Cake",
     itemDescription:
-      "Catering to our plant-based patrons, this vegan delight is made with fresh seasonal berries and wholesome ingredients, offering a guilt-free indulgence.",
+      "Catering to our plant-based patrons, this vegan delight is made with fresh seasonal berries and wholesome ingredients.",
     itemImage: "/images/menu14fruit.png",
   },
 ];

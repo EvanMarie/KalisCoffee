@@ -1,4 +1,6 @@
 .event-cards-container {
+    width: 100%;
+    max-width: 1400px;
     gap: 1rem;
     display: flex;
     flex-wrap: wrap;
@@ -25,10 +27,17 @@
     
         }
 
-.event-card h2, .event-modal-container h2 {
+.event-card h2 {
     margin: 0px;
     color: var(--orange);
     text-shadow: var(--mediumShadowDark);
+}
+
+.event-modal-container h2 {
+    margin: 0px;
+    color: var(--darkBrown);
+    text-shadow: 1px 1px 2px var(--orange);
+
 }
 
 .event-card-description,  .event-modal-description {
@@ -55,22 +64,23 @@
 
 .event-modal-container {
     width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
     border-radius: var(--roundLarge);
     background-color: var(--peachyCreme);
     color: var(--darkBrown);
     padding: var(--medium);
-}
-
-.event-modal-container p {
     margin-bottom: var(--medium);
     font-weight: var(--semiBold);
 }
+
 
 .event-time {
     color: var(--darkBrown);
     background-color: var(--orangeTransparent);
     padding: var(--medium) var(--large);
-    padding-bottom: 0px;
     border-radius: var(--roundMedium);
     font-size: var(--medium);
     box-shadow: var(--mediumShadowDark);
@@ -80,6 +90,17 @@
     .event-modal-container {
         width: 500px;
     }
+
+    .event-image {
+        width: 100%;
+        max-width: 350px;
+        object-fit: cover;
+        border-radius: var(--roundMedium);
+    }
+
+    .event-modal-container h2 {
+        font-size: var(--largerText);
+    }
 }
 
 @media (min-width: 1200px) {
@@ -87,20 +108,11 @@
         width: 250px;
     }
 
-    .event-card h2, .event-modal-container h2 {
+    .event-card h2 {
         font-size: var(--mediumText);
     }
 
     .event-cards-container {
-        gap: 1.5rem;
         justify-content: space-evenly;
-    }
-
-    .event-image {
-        width: 100%;
-        max-width: 225px;
-        height: 300px;
-        object-fit: cover;
-        border-radius: var(--roundMedium);
     }
 }
