@@ -63,7 +63,7 @@ function EventModalFunction({
           >
             <FaWindowClose
               style={{
-                color: "var(--darkBrown)",
+                color: "var(--orange)",
                 position: "absolute",
                 top: "35px",
                 right: "25px",
@@ -127,18 +127,18 @@ export default function EventModal({
         {" "}
         <VerticalStack spacing="10px">
           <h2>{eventTitle}</h2>
+          <p
+            style={{
+              fontSize: "var(--smallText)",
+              fontWeight: "var(--semiBold)",
+              textShadow: "0.5px 0.5px 1px var(--coffee)",
+            }}
+          >
+            (click to find out more)
+          </p>
           <img src={eventImage} alt={eventTitle} className="event-image" />
           <div className="event-card-description">
             <ShortText>{eventDescription}</ShortText>
-            <p
-              style={{
-                fontSize: "var(--smallText)",
-                fontWeight: "var(--semiBold)",
-                color: "var(--orange)",
-              }}
-            >
-              (find out more)
-            </p>
           </div>
         </VerticalStack>
       </div>

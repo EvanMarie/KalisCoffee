@@ -14,7 +14,9 @@
     padding: var(--medium);
     border-radius: var(--roundLarge);
     background-color: var(--mediumBrown);
+    box-shadow: var(--mediumShadowDark);
     display: flex;
+    color: var(--peachyCreme);
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
@@ -22,9 +24,11 @@
 
 .event-card:hover {
     cursor: pointer;
-    transform: scale(1.03);
-    transition: all 0.4s ease-in-out;
-    
+    transform: scale(1.05);
+    background-color: var(--peachyCreme);
+    color: var(--darkBrown);
+    border: 2px solid var(--darkBrownTransparent);
+    transition: all 0.3s ease-in-out;
         }
 
 .event-card h2 {
@@ -35,9 +39,8 @@
 
 .event-modal-container h2 {
     margin: 0px;
-    color: var(--darkBrown);
-    text-shadow: 1px 1px 2px var(--orange);
-
+    color: var(--orange);
+    text-shadow: var(--largeShadowDark);
 }
 
 .event-card-description,  .event-modal-description {
@@ -58,9 +61,6 @@
     box-shadow: var(--mediumShadowDark);
 }
 
-.event-card-description {
-    color: var(--peachyCreme);
-}
 
 .event-modal-container {
     width: 375px;
@@ -69,21 +69,24 @@
     align-items: center;
     gap: 10px;
     border-radius: var(--roundLarge);
-    background-color: var(--peachyCreme);
-    color: var(--darkBrown);
+    background-color: var(--coffee);
+    color: var(--peachyCreme);
     padding: var(--medium);
     margin-bottom: var(--medium);
     font-weight: var(--semiBold);
+    box-shadow: var(--mediumShadowDark);
+    border: 1px solid var(--darkBrown);
 }
 
 
 .event-time {
-    color: var(--darkBrown);
+    color: var(--creme);
     background-color: var(--orangeTransparent);
     padding: var(--medium) var(--large);
     border-radius: var(--roundMedium);
     font-size: var(--medium);
     box-shadow: var(--mediumShadowDark);
+    text-shadow: var(--smallShadowDark);
 }
 
 @media (min-width: 750px) {

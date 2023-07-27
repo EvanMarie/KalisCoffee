@@ -13,8 +13,8 @@ import Footer from "~/structuralComponents/footer";
 
 export const meta: V2_MetaFunction = () => {
   return [
-    { title: "New Remix App" },
-    { name: "description", content: "Welcome to Remix!" },
+    { title: "Kali's Coffee" },
+    { name: "Brewing up urban divinity.", content: "Welcom to Kali's Coffee!" },
   ];
 };
 
