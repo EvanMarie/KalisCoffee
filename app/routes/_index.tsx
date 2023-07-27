@@ -4,7 +4,11 @@ import Header from "~/structuralComponents/header";
 // import Card from "~/structuralComponents/card";
 
 import { VerticalStack } from "~/structuralComponents/verticalStack";
-import { MenuItem, MenuItems } from "./menuItems";
+import type { MenuItem } from "./menuItems";
+import { MenuItems } from "./menuItems";
+import type { EventItem } from "./eventItems";
+import { EventItems } from "./eventItems";
+import EventModal from "~/structuralComponents/eventCard";
 
 export const meta: V2_MetaFunction = () => {
   return [
@@ -20,17 +24,30 @@ export default function Index() {
         titleImage="/images/name03.png"
         subtitle="Brewing up urban divinity."
       />
-      <div className="text-section">
+      <div className="text-section-stackable">
         <VerticalStack spacing="5px">
           <h1>Welcome to Kali's</h1>
           <p>
-            Immerse yourself in the energy and mystique of Kali's Coffee. Like
-            the formidable goddess, Kali, our cafe is a haven for the bold,
-            creative, and adventurous and a celebration of the vibrant community
-            that brings our coffeehouse to life. Here, each cup of coffee holds
-            a transformative experience, and every visit is a new revelation.
+            We are a sanctuary for coffee connoisseurs, food enthusiasts, and
+            lovers of culture. Named after the goddess of power and change,
+            Kali, our café is not just a place to grab a quick coffee; it's a
+            place where authenticity meets creativity, and tradition blends with
+            innovation. It's where the magic of brewing meets the art of
+            cooking, and the joy of eating meets the thrill of conversation.
+            From our farm-to-cup sourced beans, to our artfully crafted menu,
+            and vibrant community events, every detail at Kali's Coffee is
+            designed to delight your senses, feed your curiosity, and fuel your
+            day. So, come on in and let us serve you an experience that's as
+            invigorating as a divine brew and as comforting as a home-cooked
+            meal. Welcome to Kali's Coffee - where every sip and bite is a
+            celebration of life!
           </p>
         </VerticalStack>
+        <img
+          className="stackable-image-right"
+          src="/images/kalis-dining.png"
+          alt="Kali's Coffee"
+        />
       </div>
       <div className="text-section-stackable">
         <img
@@ -79,7 +96,8 @@ export default function Index() {
             with our assortment of pastries, gourmet sandwiches, and seasonal
             specials, your culinary journey at Kali's Coffee will be anything
             but ordinary. Each visit promises a new flavor, a new experience,
-            and a new memory to savor.
+            and a new memory to savor. Scroll through some of our favorites
+            below!
           </p>
         </VerticalStack>
         <img
@@ -99,12 +117,42 @@ export default function Index() {
             />
           ))}
         </CardCarousel>
+        <div className="text-section-stackable">
+          <img
+            className="stackable-image-left"
+            src="/images/events.png"
+            alt="Kali's Coffee"
+          />
+          <VerticalStack spacing="15px">
+            <h1>Events</h1>
+            <p>
+              At Kali's Coffee, we believe that coffee houses are the epicenters
+              of creativity and community, which is why we host an array of
+              events that offer more than just divine brews. From inspiring
+              poetry nights to engaging book clubs, to vibrant live music, we
+              aim to create a dynamic and enriching space for our patrons.
+            </p>
 
-        {/* <CardCarousel>
-          {cards.map((card) => (
-            <CardCarouselItem key={card}>{card}</CardCarouselItem>
+            <p>
+              Our events are more than just an opportunity to engage with
+              literature, music, and art – they are a celebration of the vibrant
+              community that we've brewed over the years. The essence of Kali's
+              Coffee is not just about the coffee we serve, but also the
+              connections we foster. Find out more about our events below!
+            </p>
+          </VerticalStack>
+        </div>
+        <div className="event-cards-container">
+          {EventItems.map((item: EventItem, index) => (
+            <EventModal
+              key={index}
+              eventTitle={item.eventTitle}
+              eventDescription={item.eventDescription}
+              eventImage={item.eventImage}
+              eventTime={item.eventTime}
+            />
           ))}
-        </CardCarousel> */}
+        </div>
       </VerticalStack>
     </VerticalStack>
   );

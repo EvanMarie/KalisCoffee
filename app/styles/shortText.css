@@ -1,6 +1,7 @@
 .shortText {
     display: -webkit-box;
     -webkit-box-orient: vertical;
+    white-space: break-spaces;
     overflow: hidden;
     text-overflow: "";
 }

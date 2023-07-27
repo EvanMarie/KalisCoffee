@@ -56,6 +56,7 @@
     --cardText: 1.1rem;
     --normalText: 1.3rem;
     --mediumText: 1.5rem;
+    --mediumLargeText: 1.7rem;
     --largeText: 2rem;
     --xlargeText: 3rem;
     --xxlargeText: 4rem;
@@ -168,6 +169,7 @@ p {
     width: 375px;
     align-self: center;
     border-radius: var(--roundMedium);
+    box-shadow: var(--mediumShadowDark);
 }
 
 .stackable-image-left {

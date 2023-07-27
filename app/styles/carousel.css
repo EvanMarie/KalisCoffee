@@ -16,19 +16,15 @@
 
 .carousel-track {
     height: 100%;
-    padding: var(--large) var(--medium);
+    padding: var(--large) var(--large);
     display: flex;
     transition: transform 0.3s ease;
 }
 
-.ellipse-outer {
-    display: inline-block;
-    /* Or use any other display property as per your layout needs */
-}
 
 .card {
-    width: 350px;
-    height: 500px;
+    width: 325px;
+    height: 450px;
     font-size: var(--mediumText);
     background-color: var(--peachyCreme);
     color: var(--mainBackground);
@@ -44,15 +40,16 @@
 
 .card:hover {
     box-shadow: var(--mediumShadowDark);
-    transform: scale(1.05);
+    transform: scale(1.12);
     transition: all 0.3s ease-in-out;
-
+    background-color: var(--coffee);
+    color: var(--peachyCreme);
 }
 
 .card img {
-    width: 300px;
-    height: 300px;
-    border-radius: var(--full);
+    width: 250px;
+    height: 250px;
+    border-radius: 40%;
 }
 
 .card h3 {

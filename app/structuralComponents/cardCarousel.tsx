@@ -11,7 +11,7 @@ interface CardCarouselProps {
 export default function CardCarousel({
   children,
   direction = "row",
-  spacing = "20px",
+  spacing = "30px",
 }: CardCarouselProps) {
   return (
     <div className="carousel-outer">
@@ -59,7 +59,12 @@ export function MenuCard({
 }: MenuCardProps) {
   return (
     <div className="card">
-      <VerticalStack spacing="10px">
+      <VerticalStack
+        height="100%"
+        spacing="10px"
+        justify="flex-start"
+        padding="var(--xsmall) var(--large)"
+      >
         <h3>{itemName}</h3>
         <img src={itemImage} alt={itemName} />
         <div className="card-description">
