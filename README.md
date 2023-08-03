@@ -1,58 +1,54 @@
-# Welcome to Remix!
+# [Kali's Coffee](https://kalis-coffee.vercel.app/)
 
-- [Remix Docs](https://remix.run/docs)
+Welcome to Kali's Coffee, brewing up urban divinity at 123 Divine Brew Boulevard, Santa Monica, CA 90291. Contact us at 📞 (123) 456-7890.
 
-## Development
+![Kali's Coffee](https://iheartcomponents.com/images/design/KalisMain.png)
 
-From your terminal:
+## Table of Contents
 
-```sh
-npm run dev
-```
+1. [Introduction](#introduction)
+2. [Spilling the Beans](#spilling-the-beans)
+3. [Our Menu](#our-menu)
+4. [Events](#events)
+5. [Location & Contact](#location--contact)
 
-This starts your app in development mode, rebuilding assets on file changes.
+## Introduction
 
-## Deployment
+Inspired by Kali, the goddess of transformation, we celebrate not just coffee and cuisine but also culture and connection. Our blend of authenticity and innovation pairs the magic of brewing with engaging conversation.
 
-First, build your app for production:
+## Spilling the Beans
 
-```sh
-npm run build
-```
+Our diverse coffee beans are sourced from the best plantations globally, selected for unique character, quality, and sustainability practices.
 
-Then run the app in production mode:
+## Our Menu
 
-```sh
-npm start
-```
+An ever-evolving symphony of flavors crafted to stir your senses and captivate your palate. Some highlights include:
+- Kali's Fury Espresso
+- Blissful Latte
+- Goddess Salad
+- Dark Chocolate Lava
+- And more!
 
-Now you'll need to pick a host to deploy it to.
+![Menu Image](https://kalis-coffee.vercel.app/images/menu09cheesecake.png)
 
-### DIY
+## Events
 
-If you're familiar with deploying node applications, the built-in Remix app server is production-ready.
+Kali's Coffee hosts various community events, transforming our space into a hub for creativity and connection:
+- **Poetry Reading:** 'Verses in the Vortex'
+- **Book Club:** 'The Prose Portal'
+- **Live Music:** 'Rhythms and Brews'
+- **Movie Night:** 'Frames and Brews'
 
-Make sure to deploy the output of `remix build`
+Find more details by [clicking here](events-link).
 
-- `build/`
-- `public/build/`
+## Location & Contact
 
-### Using a Template
+Visit us at:
 
-When you ran `npx create-remix@latest` there were a few choices for hosting. You can run that again to create a new project, then copy over relevant code/assets from your current app to the new project that's pre-configured for your target server.
+123 Divine Brew Boulevard
+Santa Monica, CA 90291
+📞 (123) 456-7890
 
-Most importantly, this means everything in the `app/` directory, but if you've further customized your current application outside of there it may also include:
+---
 
-- Any assets you've added/updated in `public/`
-- Any updated versions of root files such as `.eslintrc.js`, etc.
-
-```sh
-cd ..
-# create a new project, and pick a pre-configured host
-npx create-remix@latest
-cd my-new-remix-app
-# remove the new project's app (not the old one!)
-rm -rf app
-# copy your app over
-cp -R ../my-old-remix-app/app app
-```
+Kali's Coffee © 2023. All rights reserved.
